@@ -1,0 +1,23 @@
+.tab_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:70px;
+    width: calc(100vw - 50px);
+    background-color: #394a5e;
+}
+
+.tab_component1{
+    margin-left: 1rem;
+}
+
+.tab_component2{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.tab_info{
+    padding-right: 1rem;
+    margin-right: 1rem;
+    color: #636363;
+}

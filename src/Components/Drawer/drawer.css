@@ -1,0 +1,87 @@
+.navbar{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #5daae0;
+    width: 100%;
+    height: 100vh;
+    z-index: 200 !important;
+}
+
+.menu_drawer{
+    background-color: #5daae0;
+    width: 320px;
+    height: 100vh;
+}
+
+.drawer_box{
+    position: relative;
+    margin-left: 60px !important;
+}
+
+.drawer_text_menu{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+    font-size: 1rem;
+    border-bottom:1px solid #dfdfdf;
+}
+
+.drawer_text_back{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.menu_icon {
+    margin-top: 0rem !important;
+    border-bottom: 0.8px solid #f6f6f6;
+}
+
+.back_icon {
+    margin-top: 0rem !important;
+}
+
+.user_icon {
+    position: absolute !important;
+    bottom: 0;
+}
+
+.menu_icon i{
+    transform: scale(1.5);
+    color: #fff;
+}
+
+.back_icon i{
+    transform: scale(1.5);
+    color: #fff;
+}
+
+.user_icon i{
+    transform: scale(1.5);
+    color: #fff;
+}
+
+.login_box{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.drawer_user_icon i{
+    transform: scale(1.5);
+    color: #fff;
+}
+
+.user_name{
+    margin-right: 3.8rem;
+    color: #fff;
+}

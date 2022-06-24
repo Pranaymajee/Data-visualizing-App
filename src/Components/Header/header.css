@@ -1,0 +1,39 @@
+.header_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: calc(100vw - 50px);
+    background-color: #394a5e;
+}
+
+.header_component1, .header_component2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_component2{
+    
+}
+
+.header_back_btn i{
+    transform: scale(1.5);
+    color: #fff;
+}
+
+.autonomous{
+    padding: 3px 6px;
+    background-color: #fc7500;
+    transform: translateX(50%);
+    margin: 0 3rem 1.6rem 0;
+    border-radius: 0 0 12px 12px;
+}
+
+.freeda{
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: #fc7500;
+    margin: 0 1rem 0 1rem;
+}
