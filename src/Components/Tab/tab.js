@@ -39,6 +39,10 @@ function TabInfo() {
                         className={classes.root} 
                         label="FINISHED CALL LIST (12)" 
                         />
+                        <Tab 
+                        className={classes.root} 
+                        label="SEARCH RESULTS (12)" 
+                        />
                     </Tabs>
                 </Box>
             </Box>

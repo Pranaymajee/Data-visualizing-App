@@ -1,11 +1,14 @@
 import React from 'react';
 import './header.css';
+import Freeda from '../../images/freeda.svg';
+import ar1 from '../../images/ar1.svg';
+import ar2 from '../../images/ar2.svg';
 import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { FilledInput } from "@material-ui/core";
 import { makeStyles } from '@material-ui/core/styles';
-import AccountCircle from '@material-ui/icons/AccountCircle';
+import SearchIcon from '@material-ui/icons/Search';
 import InputAdornment from '@material-ui/core/InputAdornment';
 
 const useStyles = makeStyles(theme => ({
@@ -14,6 +17,9 @@ const useStyles = makeStyles(theme => ({
       width: "200px",
       borderRadius: "20px 20px 20px 20px"
     },
+    textField: {
+        border: "1px solid #5daae0"
+    }
     
 }));
 
@@ -32,13 +38,15 @@ const Header = () => {
                 </Typography>
             </Box>
             <Box className='autonomous'>
+                <img style={{width: '0.5rem', marginRight: '4px'}} src={ar1} alt="" />
                 <Typography style={{color:"#fff", fontSize:"0.7rem"}}>
                     AUTONOMOUS RECEIVABLES
                 </Typography>
+                <img style={{width: '0.5rem', marginLeft: '4px'}} src={ar2} alt="" />
             </Box>
             <Box className='header_component2'>
             <FilledInput
-                sx={{display: "flex", justifyContent: "center"}}
+                style={{display: "flex", justifyContent: "center", color: '#fff', paddingBottom: '1rem'}}
                 placeholder='Search Name'
                 className={classes.textField}
                 variant="filled"
@@ -46,15 +54,16 @@ const Header = () => {
                 root: classes.root
                 }}
                 startAdornment={
-                    <InputAdornment position="start">
-                      <AccountCircle />
+                    <InputAdornment style={{transform: 'scale(1.36)', marginLeft: '-7px', marginRight: '11px', padding: '0', paddingTop: '11.56px'}} position="start">
+                      <SearchIcon style={{color: '#fff', minHeight: '1rem', minWidth: '1rem', backgroundColor: '#5daae0', borderRadius: '50%', padding: '3px'}}/>
                     </InputAdornment>
                 }
                 disableUnderline
             />
-                <div className='freeda'>
-
-                </div>
+                <Button className='freeda'>
+                    <Typography style={{color:"#fff", fontSize:"0.8rem",marginRight: '5px', marginLeft: '5px'}}>FREEDA</Typography>
+                    <img style={{width: '2.1rem', marginLeft: '0px'}} src={Freeda} alt="" />
+                </Button>
             </Box>
         </div>
     )

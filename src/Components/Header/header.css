@@ -23,14 +23,20 @@
 }
 
 .autonomous{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12.5rem;
     padding: 3px 6px;
     background-color: #fc7500;
     transform: translateX(50%);
-    margin: 0 3rem 1.6rem 0;
+    margin: 0 5.5rem 1.6rem 0;
     border-radius: 0 0 12px 12px;
 }
 
 .freeda{
+    display: flex;
+
     width: 100px;
     height: 35px;
     border-radius: 20px;
