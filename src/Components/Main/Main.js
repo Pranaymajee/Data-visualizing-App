@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../Header/Header';
 import Tab from '../Tab/tab';
-import GridCards from '../GridCards/gridCards';
+import GridCards from '../GridCards/GridCards';
 import './main.css';
 
 

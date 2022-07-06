@@ -36,10 +36,7 @@
 
 .freeda{
     display: flex;
-
     width: 100px;
     height: 35px;
-    border-radius: 20px;
-    background-color: #fc7500;
-    margin: 0 1rem 0 1rem;
+    background-color: #fc7500 !important;
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import './header.css';
 import Freeda from '../../images/freeda.svg';
 import ar1 from '../../images/ar1.svg';
 import ar2 from '../../images/ar2.svg';
@@ -10,6 +9,8 @@ import { FilledInput } from "@material-ui/core";
 import { makeStyles } from '@material-ui/core/styles';
 import SearchIcon from '@material-ui/icons/Search';
 import InputAdornment from '@material-ui/core/InputAdornment';
+import './header.css';
+
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -60,7 +61,7 @@ const Header = () => {
                 }
                 disableUnderline
             />
-                <Button className='freeda'>
+                <Button style={{borderRadius: '20px', margin: "0 1rem 0 1rem"}} className='freeda'>
                     <Typography style={{color:"#fff", fontSize:"0.8rem",marginRight: '5px', marginLeft: '5px'}}>FREEDA</Typography>
                     <img style={{width: '2.1rem', marginLeft: '0px'}} src={Freeda} alt="" />
                 </Button>

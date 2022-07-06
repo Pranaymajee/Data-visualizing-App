@@ -1,4 +1,17 @@
 .grid_wrapper{
+    position: relative !important;
     height: 100%;
     background-color: #394a5e;
+}
+
+.arrowLeft{
+    position: absolute !important;
+    top: 37.5%;
+    left: 7px;
+}
+
+.arrowRight{
+    position: absolute !important;
+    top: 37.5%;
+    right: 7px;
 }
