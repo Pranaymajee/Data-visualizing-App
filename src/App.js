@@ -15,8 +15,8 @@ function App() {
 
   useEffect(() => {
     dispatch(changePage(0))
-   axios.post(`http://localhost:4000/getUserCallWorkbook.do?pageNumber=${0}&pageSize=5`).then(res =>dispatch(getData(res.data.workbookItems)))
-
+    axios.post(`http://localhost:4000/getUserCallWorkbook.do?pageNumber=${0}&pageSize=5`).then(res => dispatch(getData(res.data.workbookItems)))
+    axios.post(`http://localhost:4000/getUserCallWorkbook.do?pageNumber=${0}&pageSize=5`).then(res => dispatch({type:"OVERVIEW",payload:res.data.overview}))
   }, [])
   
 
@@ -29,5 +29,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;

@@ -2,7 +2,7 @@
 import React from "react";
 import Highcharts from "highcharts";
 import { useEffect } from "react";
-import { useSelector } from "react-redux/es/exports";
+import { useSelector } from "react-redux";
 
 
 
@@ -47,9 +47,8 @@ function Chart({ id, cardData, bucketNames }) {
               const c = cardData.reduce((a, b) => a + b, 0);
               return (
                 
-                ((this.point.y / c) * 100).toFixed(2) +
-                % <br/> +
-                this.point.y +"M"
+                ((this.point.y / c) * 100).toFixed(2) 
+               
               );
             },
             crop:"false",

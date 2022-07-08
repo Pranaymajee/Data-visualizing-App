@@ -11,7 +11,7 @@ const Main = () => {
   return (
     <div className='main_wrapper'>
         <Header/>
-        <Tab/>
+        <Tab data={state?.currentData} />
         <GridCards data={state?.currentData} />
     </div>
   )
