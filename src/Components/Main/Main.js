@@ -12,7 +12,7 @@ const Main = () => {
     <div className='main_wrapper'>
         <Header/>
         <Tab data={state?.currentData} />
-        <GridCards data={state?.currentData} />
+        <GridCards data={state?.currentData} upData={state?.upcomming} />
     </div>
   )
 }

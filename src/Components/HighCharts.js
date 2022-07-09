@@ -1,9 +1,7 @@
-
 import React from "react";
 import Highcharts from "highcharts";
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
-
 
 
 function Chart({ id, cardData, bucketNames }) {
@@ -34,9 +32,11 @@ function Chart({ id, cardData, bucketNames }) {
         },
         categories: bucketNames ?? state.bucket,
       },
-
       title: {
         text: undefined,
+      },
+      credits: { 
+        enabled: false 
       },
       plotOptions: {
         series: {
@@ -56,7 +56,7 @@ function Chart({ id, cardData, bucketNames }) {
             style: {
               fontSize: "0.6vw",
               textOutline: "none",
-              color: "lightblue",
+              color: "#5DAAE0",
             },
           },
         },
@@ -74,10 +74,7 @@ function Chart({ id, cardData, bucketNames }) {
   }, [state.open, state.currentData]);
 
   return (
-    <div
-      id={id}
-      style={{ height: "27vh", width:id!=="11111111" ? (state.open ? "20vw":"23vw") : (state.open ? "25vw": "29vw") }}
-    ></div>
+    <div id={id} style={{ height: "27vh", width:id!=="11111111" ? (state.open ? "20vw":"23vw") : (state.open ? "25vw": "29vw") }}></div>
   );
 }
 

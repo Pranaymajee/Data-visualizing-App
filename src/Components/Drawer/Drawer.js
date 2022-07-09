@@ -6,13 +6,7 @@ import Box from '@material-ui/core/Box';
 import './drawer.css';
 
 
-const useStyles = makeStyles({
-  
-});
-
 export default function TemporaryDrawer() {
-
-  const classes = useStyles();
 
   const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
 

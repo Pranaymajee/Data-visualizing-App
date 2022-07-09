@@ -15,3 +15,31 @@
     top: 37.5%;
     right: 7px;
 }
+
+.cust_details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.broken_promise_data{
+    margin-left: 0.8rem;
+    padding-left: 1rem;
+    height: 195px;
+    width: 80px;
+    border-left: 1px solid #636363;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.chart_info{
+    height: 240px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
