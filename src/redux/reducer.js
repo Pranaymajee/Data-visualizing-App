@@ -4,7 +4,8 @@ const initialState = {
     currentPage : 0,
     overview : [],
     upcomming : {},
-    dataLoad : "false"
+    dataLoad : "false",
+    gridLoad : "true",
 }
 //Updating the state using switch case, depending upon which action is dispatched from App.js
 const reducer = (state = initialState, action) => {
@@ -28,6 +29,10 @@ const reducer = (state = initialState, action) => {
         case "DATALOAD":
             return{
                 ...state, dataLoad : action.payload
+            }
+        case "GRIDLOAD":
+            return{
+                ...state, gridLoad : action.payload
             }
         default:
             return state;

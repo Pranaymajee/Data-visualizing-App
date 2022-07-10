@@ -1,0 +1,79 @@
+.gridSkeleton_wrapper{
+    position: relative !important;
+    height: 100%;
+    background-color: #394a5e;
+}
+
+.skeleton_cust_details, .skeleton_chart_info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skeleton_cust_component1,
+.skeleton_cust_component2,
+.skeleton_chart_component1,
+.skeleton_chart_component2{
+    border-radius: 6px;
+    background-color: rgb(241, 242, 244, 0.1);
+}
+
+.skeleton_cust_component1{
+    height: 1.6rem;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 0.7rem;
+}
+
+.skeleton_cust_component2{
+    height: 1.6rem;
+    width: 100px;
+    margin-top: 10px;
+    margin-right: 0.7rem;
+}
+
+.skeleton_chart_component1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 190px;
+    margin-bottom: 20px;
+    width: 350px;
+    margin-left: 0.7rem;
+    margin-top: 25px;
+}
+
+.skeleton_chart_component2{
+    height: 190px;
+    margin-bottom: 20px;
+    width: 80px;
+    margin-right: 0.7rem;
+    margin-top: 25px;
+}
+
+.skeleton_loader{
+    width: 30px !important;
+    height: 30px !important;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { 
+        -webkit-transform: rotate(0deg); 
+    }
+    100% { 
+        -webkit-transform: rotate(360deg); 
+    }
+  }
+  
+  @keyframes spin {
+    0% { 
+        transform: rotate(0deg); 
+    }
+    100% { 
+        transform: rotate(360deg); 
+    }
+  }

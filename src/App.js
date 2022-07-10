@@ -4,7 +4,6 @@ import Main from './Components/Main/Main';
 import HomeSkeleton from './Components/SkeletonLoading/HomeSkeleton';
 import {useEffect} from 'react';
 import getData from './redux/action.js';
-import getUpcommingData from './redux/action.js';
 import axios from 'axios';
 import { changePage } from './redux/action';
 import './App.css';

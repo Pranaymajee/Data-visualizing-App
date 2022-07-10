@@ -15,7 +15,7 @@ import './header.css';
 const useStyles = makeStyles(theme => ({
     root: {
       height: "35px",
-      width: "200px",
+      width: "250px",
       borderRadius: "20px 20px 20px 20px"
     },
     textField: {
@@ -34,7 +34,7 @@ const Header = () => {
                 <Button style={{minWidth: '50px', minHeight: '50px'}} className='header_back_btn'>
                     <i class="fas fa-arrow-left" ></i>
                 </Button>
-                <Typography style={{color:"#5daae0", fontSize:"1.3rem"}}>
+                <Typography style={{color:"#5daae0", fontSize:"1.3rem", marginLeft: '5px'}}>
                     Call Workboard
                 </Typography>
             </Box>
