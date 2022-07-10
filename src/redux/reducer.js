@@ -1,3 +1,4 @@
+//Initializing every state in the reducer
 const initialState = {
     currentData : [],
     currentPage : 0,
@@ -5,7 +6,7 @@ const initialState = {
     upcomming : {},
     dataLoad : "false"
 }
-
+//Updating the state using switch case, depending upon which action is dispatched from App.js
 const reducer = (state = initialState, action) => {
     switch(action.type){
         case "SETDATA":

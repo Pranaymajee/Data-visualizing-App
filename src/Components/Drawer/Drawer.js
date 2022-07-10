@@ -5,18 +5,15 @@ import Button from '@material-ui/core/Button';
 import Box from '@material-ui/core/Box';
 import './drawer.css';
 
-
 export default function TemporaryDrawer() {
 
   const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
-
   const disableBack = React.useRef();
 
   return (
 
     <div>
       <Box className='navbar'>
-
         <Button
           style={{minWidth: "50px", minHeight: "50px", borderBottom:"1px solid #dfdfdf", borderRadius:"0px"}}
           className='menu_icon'
