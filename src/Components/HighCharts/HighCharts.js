@@ -68,13 +68,10 @@ function Chart({ id, cardData, bucketNames }) {
   useEffect(() => {
     console.log(cardData, state.bucket);
     renderChart();
-
-    // window.addEventListener('resize', renderChart(items))
-
   }, [state.open, state.currentData]);
 
   return (
-    <div id={id} style={{ height: "27vh", width:id!=="11111111" ? (state.open ? "20vw":"23vw") : (state.open ? "25vw": "29vw") }}></div>
+    <div id={id} style={{ height: "27vh", width:id!=="11111111" ? (state.open ? "20vw":"26vw") : (state.open ? "25vw": "29vw") }}></div>
   );
 }
 

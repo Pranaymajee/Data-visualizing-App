@@ -15,7 +15,7 @@ export default function TemporaryDrawer() {
     <div>
       <Box className='navbar'>
         <Button
-          style={{minWidth: "50px", minHeight: "50px", borderBottom:"1px solid #dfdfdf", borderRadius:"0px"}}
+          style={{minWidth: "7vh", minHeight: "7vh", borderBottom:"1px solid #dfdfdf", borderRadius:"0px"}}
           className='menu_icon'
           onClick={() => {
             setIsDrawerOpen(true);
@@ -27,7 +27,7 @@ export default function TemporaryDrawer() {
         </Button>
 
         <Button 
-          style={{minWidth: "50px", minHeight: "50px"}}
+          style={{minWidth: "7vh", minHeight: "7vh"}}
           className='user_icon'
         >
           <i class="fas fa-user-circle"></i>
@@ -41,7 +41,7 @@ export default function TemporaryDrawer() {
           <Box className='menu_drawer'>
             <div className='drawer_text_menu'>
               <Button
-                style={{minWidth: '50px', minHeight: "50px", borderBottom: "none"}}
+                style={{minWidth: '7vh', minHeight: "7vh", borderBottom: "none"}}
                 className='menu_icon'
                 onClick={() => {
                 setIsDrawerOpen(true);
@@ -54,7 +54,7 @@ export default function TemporaryDrawer() {
             </div>
             <div className='drawer_text_back'>
               <Button
-                style={{minWidth: '50px', minHeight: "50px"}}
+                style={{minWidth: '7vh', minHeight: "7vh"}}
                 className='back_icon'
                 onClick={() => {
                   setIsDrawerOpen(false); 
@@ -68,7 +68,7 @@ export default function TemporaryDrawer() {
             
             <div className='login_box'>
               <Button
-              style={{minWidth: '50px', minHeight: "50px"}}
+              style={{minWidth: '7vh', minHeight: "7vh"}}
               className='drawer_user_icon'
               >
                 <i class="fas fa-user-circle"></i>

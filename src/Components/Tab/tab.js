@@ -51,27 +51,27 @@ function TabInfo({data}) {
                         className={classes.root} 
                         label="FINISHED CALL LIST (12)" 
                         />
-                        <Tab 
+                        {/* <Tab 
                         className={classes.root} 
                         label="SEARCH RESULTS (12)" 
-                        />
+                        /> */}
                     </Tabs>
                 </Box>
             </Box>
 
             <Box className='tab_component2'>
                 <Box style={{borderRight: '1px solid #636363'}} className='tab_info'>
-                    <p style={{color: '#fff', fontSize: '20px'}}>{state.overview.processedCustomerCount}<span style={{color: '#919191'}}>/</span><span style={{color: '#919191', fontSize: '15px'}}>{state.overview.totalCustomerCount}</span></p>
-                    <p style={{color: '#5daae0', fontSize: '12px'}}>Total Customers Called</p>
+                    <p style={{color: '#fff', fontSize: '2.8vh'}}>{state.overview.processedCustomerCount}<span style={{color: '#919191'}}>/</span><span style={{color: '#919191', fontSize: '2vh'}}>{state.overview.totalCustomerCount}</span></p>
+                    <p style={{color: '#5daae0', fontSize: '1.8vh'}}>Total Customers Called</p>
 
                 </Box>
                 <Box style={{borderRight: '1px solid #636363'}} className='tab_info'>
-                    <p style={{color: '#fff', fontSize: '20px'}}>{rhours}<span style={{color: '#fff', fontSize: '15px'}}>hr</span>{rminutes}<span style={{color: '#fff', fontSize: '15px'}}>min</span><span style={{color: '#919191'}}>/</span><span style={{color: '#919191', fontSize: '15px'}}>{state.overview.expectedCallingMinutes}hr</span></p>
-                    <p style={{color: '#5daae0', fontSize: '12px'}}>Total Time Spent on Call</p>
+                    <p style={{color: '#fff', fontSize: '2.8vh'}}>{rhours}<span style={{color: '#fff', fontSize: '2vh'}}>hr</span>{rminutes}<span style={{color: '#fff', fontSize: '2vh'}}>min</span><span style={{color: '#919191'}}>/</span><span style={{color: '#919191', fontSize: '2vh'}}>{state.overview.expectedCallingMinutes}min</span></p>
+                    <p style={{color: '#5daae0', fontSize: '1.8vh'}}>Total Time Spent on Call</p>
                 </Box>
                 <Box className='tab_info'>
-                    <p style={{color: '#fff', fontSize: '20px'}}>${state.overview.totalPastDueProcessed}<span style={{color: '#919191'}}>/</span><span style={{color: '#919191', fontSize: '15px'}}>${state.overview.totalPastDueAmount}</span></p>
-                    <p style={{color: '#5daae0', fontSize: '12px'}}>Total Past Due Touched</p>
+                    <p style={{color: '#fff', fontSize: '2.8vh'}}>${state.overview.totalPastDueProcessed}<span style={{color: '#919191'}}>/</span><span style={{color: '#919191', fontSize: '2vh'}}>${state.overview.totalPastDueAmount}</span></p>
+                    <p style={{color: '#5daae0', fontSize: '1.8vh'}}>Total Past Due Touched</p>
                 </Box>
             </Box>
         </div>

@@ -22,7 +22,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 60px;
+    height: 10vh;
 }
 
 .skeleton_header_component1{
@@ -67,7 +67,7 @@
 
 .skeleton_grid_card{
     background-color: rgb(241, 242, 244, 0.1);
-    height: 275px;
+    height: 37vh;
     display: flex;
     justify-content: center;
     align-items: center;

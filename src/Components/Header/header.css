@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
+    height: 7vh;
     width: calc(100vw - 50px);
     background-color: #394a5e;
 }
@@ -22,17 +22,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 12.5rem;
+    width: 13.1vw;
+    top: 0px;
     padding: 3px 6px;
     background-color: #fc7500;
     transform: translateX(50%);
-    margin: 0 5.5rem 1.6rem 0;
+    margin: 0 4vh 3.6vh 0;
     border-radius: 0 0 12px 12px;
 }
 
 .freeda{
     display: flex;
-    width: 100px;
-    height: 35px;
+    width: 6.4vw;
+    height:4.7vh;
     background-color: #fc7500 !important;
 }

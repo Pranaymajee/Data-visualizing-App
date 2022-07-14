@@ -14,6 +14,7 @@ import handShake from '../../images/handShake.svg';
 import brokenHandShake from '../../images/brokenHandShake.svg';
 import GridSkeleton from '../SkeletonLoading/GridSkeleton.js';
 import './gridCards.css';
+import { useEffect } from 'react';
 
 
 // data contains the information for the 5 grid cards and upData contains the information for the 6th card
@@ -46,6 +47,10 @@ const GridCards = ({data, upData}) => {
     }, 1000);
   }
 
+  useEffect(() => console.log("ecdbi"))
+  
+  useEffect(() => console.log("ecdbi"), [])
+
   // On clicking Next Btn, API is called again with new page number as parameter 
   const nextData = () =>{
 
@@ -71,41 +76,41 @@ const GridCards = ({data, upData}) => {
   return (
     <div className='grid_wrapper'>
 
-      <Button onClick={backData} disabled={state.currentPage == 0} ref={disableBack} style={{minWidth: '40px', minHeight: '40px', borderRadius: '50%', background: '#5daae0', color: '#fff', opacity: "1"}} className='arrowLeft'><KeyboardArrowLeftIcon/></Button>
-      <Button onClick={nextData} disabled={state.currentPage == 2} ref={disableNext} style={{minWidth: '40px', minHeight: '40px', borderRadius: '50%', background: '#5daae0', color: '#fff', opacity: "1"}} className='arrowRight'><KeyboardArrowRightIcon/></Button>
+      <Button onClick={backData} disabled={state.currentPage == 0} ref={disableBack} style={{minWidth: '6vh', minHeight: '6vh', borderRadius: '50%', background: '#5daae0', color: '#fff', opacity: "1"}} className='arrowLeft'><KeyboardArrowLeftIcon/></Button>
+      <Button onClick={nextData} disabled={state.currentPage == 2} ref={disableNext} style={{minWidth: '6vh', minHeight: '6vh', borderRadius: '50%', background: '#5daae0', color: '#fff', opacity: "1"}} className='arrowRight'><KeyboardArrowRightIcon/></Button>
 
       {
         state.gridLoad === "true" ? (
-          <Grid style={{padding: '1rem 1rem 0 1rem'}} container spacing={2}>
+          <Grid style={{padding: '2vh 2vh 0 2vh'}} container spacing={2}>
             {/* Mapping through 5 grid data */}
             {data.map((row)=>{
               return(
                 <Grid item xs={4}>
-                  <Paper style={{backgroundColor: '#2d404e', minHeight: '275px', color: '#8c98a0', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
+                  <Paper style={{backgroundColor: '#2d404e', minHeight: '37vh', color: '#8c98a0', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
                     <div className='cust_details'>
-                      <Typography style={{marginLeft: '0.7rem', fontWeight: '600'}}>
+                      <Typography style={{marginLeft: '1.7vh', fontWeight: '600', fontSize: '2vh'}}>
                         {row?.customerName}
                       </Typography>
-                      <Typography style={{marginRight: '0.7rem', color: '#8c98a0', fontWeight: '600'}}>
+                      <Typography style={{marginRight: '1.7vh', color: '#8c98a0', fontWeight: '600', fontSize: '2vh'}}>
                         {row?.customerNumber}
                       </Typography>
                     </div>
                     <div className='chart_info'>
                       <Chart cardData={[row.totalCurrentOpenAmount,...row.pastDueBucketDocumentAmount]} bucketNames={["Curr Due",...row.bucketNames]} id={row.customerNumber} />
                       <div className='broken_promise_data'>
-                        <Typography>{row?.totalBrokenPromises}</Typography>
+                        <Typography style={{fontSize: '2vh'}}>{row?.totalBrokenPromises}</Typography>
                         {
                           row?.totalBrokenPromises === 0 ? (
-                            <img style={{transform: 'scale(0.8)', margin: '1rem 0'}} src={handShake} alt="" />
+                            <img className="prom_img" src={handShake} alt="" />
                           ) : (
-                            <img style={{transform: 'scale(0.7)', margin: '1rem 0'}} src={brokenHandShake} alt="" />
+                            <img className="broken_prom_img" src={brokenHandShake} alt="" />
                           )
                         }
                         {
                           row?.totalBrokenPromises === 0 ? (
-                            <p style={{textAlign: 'center', fontWeight: '600'}}>No Broken Priomises</p>
+                            <p style={{textAlign: 'center', fontWeight: '600', fontSize: '2vh'}}>No Broken Promises</p>
                           ) : (
-                            <p style={{textAlign: 'center', fontWeight: '600'}}>Broken Priomises</p>
+                            <p style={{textAlign: 'center', fontWeight: '600', fontSize: '2vh'}}>Broken Promises</p>
                           )
                         }
                       </div>
@@ -116,9 +121,9 @@ const GridCards = ({data, upData}) => {
             })}
 
             <Grid item xs={4}>
-              <Paper style={{backgroundColor: '#2d404e', minHeight: '275px', color: '#8c98a0', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
+              <Paper style={{backgroundColor: '#2d404e', minHeight: '37vh', color: '#8c98a0', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
                 <div className='cust_details'>
-                  <Typography style={{marginLeft: '0.7rem', fontWeight: '600'}}>
+                  <Typography style={{marginLeft: '1.7vh', fontWeight: '600', fontSize: '2vh'}}>
                     REMAINING BALANCE SUMMARY
                   </Typography>
                 </div>
@@ -132,7 +137,8 @@ const GridCards = ({data, upData}) => {
                       "91-180",
                       "181-360",
                       ">361",
-                    ]} />
+                    ]}
+                  />
                 </div>
               </Paper>
             </Grid>
@@ -145,10 +151,10 @@ const GridCards = ({data, upData}) => {
       
       <div className='footer'>
         <div className='footer_component1'>
-          <Typography>Viewing {state.currentPage*5+1} - {state.currentPage*5+5} of 15</Typography>
+          <Typography style={{fontSize: '2vh'}}>Viewing {state.currentPage*5+1} - {state.currentPage*5+5} of 15</Typography>
         </div>
         <div className='footer_component2'>
-          <Typography>©️ Copyright 2022 HighRadius. All rights Reserved.</Typography>
+          <Typography style={{fontSize: '2vh'}}>©️ Copyright 2022 HighRadius. All rights Reserved.</Typography>
         </div>
       </div>
     </div>

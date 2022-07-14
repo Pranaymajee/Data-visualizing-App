@@ -14,13 +14,13 @@ const GridSkeleton = () => {
 
     return (
         <div className='gridSkeleton_wrapper'>
-            <Button style={{minWidth: '40px', minHeight: '40px', borderRadius: '50%', background: '#5daae0', color: '#fff', opacity: "1"}} className='arrowLeft'><KeyboardArrowLeftIcon/></Button>
-            <Button style={{minWidth: '40px', minHeight: '40px', borderRadius: '50%', background: '#5daae0', color: '#fff', opacity: "1"}} className='arrowRight'><KeyboardArrowRightIcon/></Button>
+            <Button style={{minWidth: '6vh', minHeight: '6vh', borderRadius: '50%', background: '#5daae0', color: '#fff', opacity: "1"}} className='arrowLeft'><KeyboardArrowLeftIcon/></Button>
+            <Button style={{minWidth: '6vh', minHeight: '6vh', borderRadius: '50%', background: '#5daae0', color: '#fff', opacity: "1"}} className='arrowRight'><KeyboardArrowRightIcon/></Button>
             <Grid style={{padding: '1rem 1rem 0 1rem'}} container spacing={2}>
                 {gridArray.map((index)=>{
                     return(
                     <Grid item xs={4}>
-                        <Paper style={{backgroundColor: '#2d404e', minHeight: '275px', color: '#8c98a0', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
+                        <Paper style={{backgroundColor: '#2d404e', minHeight: '37vh', color: '#8c98a0', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
                             <div className='skeleton_cust_details'>
                                 <div className='skeleton_cust_component1'>
                                     {/* <div className='shine'>s</div> */}

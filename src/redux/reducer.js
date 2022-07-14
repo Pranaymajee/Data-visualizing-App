@@ -12,7 +12,8 @@ const reducer = (state = initialState, action) => {
     switch(action.type){
         case "SETDATA":
             return{
-                ...state, currentData : action.payload
+                ...state, currentData : action.payload,
+                gridLoad : "true"
             }
         case "CHANGEPAGE":
             return{

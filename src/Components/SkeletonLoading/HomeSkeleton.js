@@ -17,7 +17,7 @@ const HomeSkeleton = () => {
                     <div className='skeleton_tab_component2'></div>
                 </div>
                 <div className='grid'>
-                    <Grid style={{padding: '1rem'}} container spacing={2}>
+                    <Grid style={{padding: '2vh'}} container spacing={2}>
                         <Grid item xs={4}>
                             <div className='skeleton_grid_card'></div>
                         </Grid>
