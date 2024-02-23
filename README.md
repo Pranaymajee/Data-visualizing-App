@@ -2,7 +2,7 @@
 
 The Data Management App is a comprehensive solution for efficient handling and management of data. It provides a polished and responsive user interface on the frontend, coupled with a robust and scalable backend infrastructure.
 
-![Data-visualizing-App]([Project Landing Page.png](https://github.com/Pranaymajee/Data-visualizing-App/blob/master/Project%20Landing%20Page.png))
+![Data-visualizing-App](Project_Landing_Page.png)
 
 ## Features
 
