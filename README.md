@@ -4,7 +4,7 @@ The Data Management App is a comprehensive solution for efficient handling and m
 
 ## Features
 
-- **Frontend**: Developed using React.js and Redux Saga for state management, offering a seamless and interactive user experience.
+- **Frontend**: Developed using React.js and Redux for state management, offering a seamless and interactive user experience.
 - **Backend**: Powered by Java SpringBoot and MySQL, ensuring reliability, security, and scalability for data management operations.
 - **CRUD Functionality**: Supports Create, Read, Update, and Delete operations for efficient data handling.
   
